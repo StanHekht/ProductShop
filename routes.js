@@ -40,7 +40,9 @@ const requestHandler = (req, res) => {
   res.end();
 };
 
-// module.exports = requestHandler;
+module.exports = requestHandler;
+
+// Alternatives
 
 // module.exports = {
 //   handler: requestHandler,
@@ -50,5 +52,5 @@ const requestHandler = (req, res) => {
 // module.exports.handler = requestHandler;
 // module.exports.someText = 'Some hard coded text';
 
-exports.handler = requestHandler;
-exports.someText = 'Some hard coded text';
+// exports.handler = requestHandler;
+// exports.someText = 'Some hard coded text';

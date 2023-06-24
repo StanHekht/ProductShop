@@ -7,4 +7,9 @@ const server = http.createServer(routes);
 // console.log(routes.someText);
 // const server = http.createServer(routes.handler);
 
-server.listen(5000);
+const host = 'localhost';
+const port = 5000;
+
+server.listen(port, host, () => {
+  console.log(`The server is running on http://${host}:${port}`);
+});
