@@ -23,7 +23,7 @@ module.exports = class Product {
   }
 
   save() {
-    this.id = Math.random().toString();
+    this.id = (Math.random() * 10).toString().replace('.', '');
     getProductsFromFile((products) => {
       products.push(this);
 
